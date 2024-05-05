@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background: #77B0AA;
+    display: grid;
+    place-items: center;
+}
+
+#container{
+    width: 80%;
+    height: 90%;
+    background: #E3FEF7;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    overflow: hidden;
+    color: #fff;
+}
+
+#panel{
+    width: 100%;
+    height: 13%;
+    background-color: #135D66;
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+    justify-content: space-around;
+    gap: 4%;
+}
+
+.ele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #003C43;
+}
+
+.box{
+    display: grid;
+    width: 8vh;
+    height: 8vh;
+    place-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding-bottom: 10vh;
+    color: #E3FEF7;
+}
+
+#bottombox{
+    width: 100%;
+    height: calc(100% - 13%);
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+#bottombox::-webkit-scrollbar{
+    display: none;
+}
+
+#circle{
+    width: 50px;
+    height: 50px;
+    background-color: #135D66;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#circle:hover{
+    background-color: #003C43;
+}
+
+#result {
+    color: #003C43;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    gap: 3vh;
+    /* background: red; */
+}
+
+#result h1{
+    font-size: 6vw;
+    font-weight: bolder;
+    margin-bottom: 7%;
+}
+
+#result h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+#result button{
+    width: 80%;
+    margin-top: 4%;
+    background: #135D66;
+    outline: none;
+    border: none;
+    color: #E3FEF7;
+    font-size: 2.8vw;
+    padding: 1vh 0px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#result button:hover{
+    background: #003C43;
+}
+#result button:active{
+    scale : 0.98
+}
