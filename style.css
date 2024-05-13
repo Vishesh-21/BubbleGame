@@ -131,3 +131,98 @@ html,body{
 #result button:active{
     scale : 0.98
 }
+
+@media (max-width : 600px){
+    #main{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #container{
+        width: 100%;
+        height: 100%;
+        background: #E3FEF7;
+        color: #fff;
+        border-radius: 0;
+    }
+    
+    .ele {
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+         gap: 7px;
+        justify-content:space-around;
+        color: #003C43;
+    }
+    .ele h1{
+        font-size: 5vw;
+    }
+    
+    .box{
+        display: flex;
+        width: 0;
+        height: 0px;
+        font-size: 5vw;
+        font-weight: bolder;
+        border-radius: 0;
+        padding-bottom: 0;
+        color: #E3FEF7;
+    }
+    
+    #bottombox{
+        width: 100%;
+        height: calc(100% - 13%);
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #circle{
+        width: 50px;
+        height: 50px;
+        background-color: #135D66;
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    
+    #circle:hover{
+        background-color: #003C43;
+    }
+
+
+    #result h1{
+        font-size: 1.9rem;
+    }
+
+    #result h2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    #result button{
+        width: 50%;
+        margin-top: 4%;
+        background: #135D66;
+        outline: none;
+        border: none;
+        color: #E3FEF7;
+        font-size: 3vw;
+        padding: 1vh 0px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    #result {
+        color: #003C43;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+}
