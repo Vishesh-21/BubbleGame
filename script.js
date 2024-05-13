@@ -1,4 +1,4 @@
-let time = 0;
+let time = 60;
 let score = 0;
 let count = 0;
 let missed = 0;
